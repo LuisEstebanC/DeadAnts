@@ -9,7 +9,16 @@ function DeadAnts(ants){
     if(typeof ants !== 'string'){
         throw new Error('You must provide a string');
     }
-return 'hello';
+
+    let antParts = ants.split('ant').join('');
+
+    function countAnts(char){
+        return antParts.split(char).length -1;
+    }
+    
+    return Math.max(countAnts('a'),countAnts('n'),countAnts('t'));
+
+
 }
-DeadAnts('3');
+DeadAnts('ant');
 module.exports = DeadAnts;

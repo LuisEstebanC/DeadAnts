@@ -10,3 +10,17 @@ test('Throw an error is the input is a blank space', () => {
   test('Throw an error is the input is null or undefined', () => {
     expect(()=>DeadAnts(null)).toThrow('The input cant be null or undefined');
   });
+
+  test('Return 0', () => {
+    expect(DeadAnts('s')).toBe(0);
+  });
+  test('Return 3', () => {
+    expect(DeadAnts('antantantttt')).toBe(3);
+  });
+
+  test('Extract ants', () => {
+    const ants ='antantants'
+    const expectAnts ='s'
+    const actualAnts = ants.split('ant').join('');
+    expect(expectAnts).toBe(actualAnts);
+  });
