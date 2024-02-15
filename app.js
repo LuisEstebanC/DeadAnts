@@ -1,5 +1,9 @@
-function printHello(){
+
+function DeadAnts(ants){
+    if(typeof ants !== 'string'){
+        throw new Error('You must provide a string');
+    }
 return 'hello';
 }
-
-module.exports = printHello;
+DeadAnts('3');
+module.exports = DeadAnts;
