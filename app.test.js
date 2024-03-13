@@ -1,26 +1,34 @@
-const DeadAnts = require('./DeadAntsOldApp');
+const DeadAnts = require('./DeadAntsNewApp');
 
-test('Throw an error is the input is different a string', () => {
-  expect(()=>DeadAnts(4)).toThrow('You must provide a string');
-});
+test("Return 0 if the string is null", () =>{
+  expect(DeadAnts(null)).toBe(0);
+})
 
-test('Throw an error is the input is a blank space', () => {
-    expect(()=>DeadAnts('')).toThrow('The input cant be empty');
-  });
-  test('Throw an error is the input is null or undefined', () => {
-    expect(()=>DeadAnts(null)).toThrow('The input cant be null or undefined');
-  });
+test("Return 0 if the string is undefined", () =>{
+  expect(DeadAnts(undefined)).toBe(0);
+})
 
-  test('Return 0', () => {
-    expect(DeadAnts('s')).toBe(0);
-  });
-  test('Return 3', () => {
-    expect(DeadAnts('antantantttt')).toBe(3);
-  });
+test("Return 0 if the string is empty", () =>{
+  expect(DeadAnts("")).toBe(0);
+})
 
-  test('Extract ants', () => {
-    const ants ='antantants'
-    const expectAnts ='s'
-    const actualAnts = ants.split('ant').join('');
-    expect(expectAnts).toBe(actualAnts);
-  });
+test("Return 0 if the input is not a string", () =>{
+  expect(DeadAnts(12)).toBe(0);
+})
+
+
+test("Return 2 if the input has 2 dead ants", () =>{
+expect(DeadAnts("an ant ant tn")).toBe(2);
+})
+
+test("Return 0 if the input has not dead ants", () =>{
+expect(DeadAnts("ant ant ant")).toBe(0);
+})
+
+test("Return 0 if the input is 'Helo world' dead ants", () =>{
+expect(DeadAnts("'Helo world'")).toBe(0);
+})
+
+test("Returns 1 if the entry contains an 'an' at the end", () =>{
+expect(DeadAnts("ant ant ant an")).toBe(1);
+})
