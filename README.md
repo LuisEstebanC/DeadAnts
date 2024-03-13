@@ -1,84 +1,82 @@
 # DeadAnts 🧺🐜
 
-## Problema: Contando hormigas muertas
+## Problem: Counting Dead Ants
 
-En un área de picnic, una fila ordenada de hormigas está marchando. Se ve algo así:
+In a picnic area, an orderly trail of ants is marching. It looks something like this:
 
 ```
 ..ant..ant.ant...ant.ant..ant.ant....ant..ant.ant.ant...ant..
 ```
 
-Pero de repente surge un rumor de que se ha visto un sándwich de pollo caído en el suelo adelante. ¡Las hormigas avanzan! ¡Oh no, es una estampida de hormigas! 🐜🏃‍♀️
+But suddenly there is a rumor that a dropped chicken sandwich has been spotted on the ground ahead. The ants surge forward! Oh no, it's an ant stampede! 🐜🏃‍♀️
 
-Algunas de las hormigas más lentas son pisoteadas, y sus pobres cuerpos quedan destrozados en pedazos dispersos.
+Some of the slower ants are trampled, and their poor little ant bodies are broken up into scattered bits.
 
-La carnicería resultante se ve así:
+The resulting carnage looks like this:
 
 ```
 ...ant...ant..nat.ant.t..ant...ant..ant..ant.anant..t
 ```
 
-¿Puedes encontrar cuántas hormigas han muerto? 😵
+Can you find how many ants have died? 😵
 
-### Solución: Función DeadAnts
+### Solution: DeadAnts Function
 
-La función `DeadAnts` resuelve este problema contando el número máximo de ocurrencias de las letras 'a', 'n' y 't' en una cadena dada, excluyendo las ocurrencias que forman la subcadena "ant". El resultado de esta función es el número máximo de hormigas que han muerto en la estampida. 🕵️‍♂️🐜💀
+The `DeadAnts` function solves this problem by counting the maximum number of occurrences of the letters 'a', 'n', and 't' in a given string, excluding occurrences that form the substring "ant". The result of this function is the maximum number of ants that have died in the stampede. 🕵️‍♂️🐜💀
 
-## Requerimientos
+## Requirements
 
-Para ejecutar el proyecto **DeadAnts**, asegúrate de tener lo siguiente:
+To run the **DeadAnts** project, make sure you have the following:
 
-1. **Node.js**: Asegúrate de tener Node.js instalado en tu sistema. Puedes descargarlo desde [el sitio oficial de Node.js](https://nodejs.org/).
+1. **Node.js**: Make sure you have Node.js installed on your system. You can download it from [the official Node.js website](https://nodejs.org/).
 
-2. **Git**: Si aún no lo tienes, instala Git para clonar el repositorio del proyecto. Puedes descargar Git desde [aquí](https://git-scm.com/downloads).
+2. **Git**: If you don't already have it, install Git to clone the project repository. You can download Git from [here](https://git-scm.com/downloads).
 
-3. **BenchmarkJS**:Este proyecto utiliza la biblioteca [Benchmark.js](https://benchmarkjs.com/) para comparar el rendimiento de dos implementaciones de una función llamada DeadAnts. :construction:📊
+3. **BenchmarkJS**: This project uses the [Benchmark.js](https://benchmarkjs.com/) library to compare the performance of two implementations of a function called DeadAnts. :construction:📊
 
-4. **Jest**: Este proyecto utiliza la libreria [Jest](https://jestjs.io/docs/getting-started) para realizar los test.  
+4. **Jest**: This project uses the [Jest](https://jestjs.io/docs/getting-started) library for running tests.
 
-5. **Editor de código**: Utiliza un editor de código como Visual Studio Code, Sublime Text o cualquier otro de tu elección.
+5. **Code Editor**: Use a code editor such as Visual Studio Code, Sublime Text, or any other of your choice.
 
-## Pasos para Reproducir el benchmark
+## Steps to Reproduce Benchmark
 
-Sigue estos pasos para ejecutar el proyecto:
+Follow these steps to run the project:
 
-1. **Clona el Repositorio**:
-   - Abre una terminal o línea de comandos.
-   - Navega a la ubicación donde deseas clonar el repositorio.
-   - Ejecuta el siguiente comando para clonar el repositorio:
+1. **Clone the Repository**:
+   - Open a terminal or command prompt.
+   - Navigate to the location where you want to clone the repository.
+   - Run the following command to clone the repository:
 
      ```
      git clone https://github.com/LuisEstebanC/DeadAnts/tree/PairProgramingCode
      ```
 
-2. **Instala Dependencias**:
-   - Navega al directorio del proyecto:
+2. **Install Dependencies**:
+   - Navigate to the project directory:
 
      ```
      cd DeadAnts
      ```
-   - Instala las dependencias ejecutando:
+   - Install the dependencies by running:
 
      ```
      npm install
      ```
 
-3. **Ejecuta la Aplicación**:
-   - Ejecuta el siguiente comando para iniciar la aplicación:
+3. **Run the Application**:
+   - Run the following command to start the application:
 
      ```
      node Benchmarkjs.js
      ```
 
-4. **Explora el Proyecto**:
+4. **Explore the Project**:
+   - Now you can explore the application and count dead ants. 💀
 
-   - Ahora puedes explorar la aplicación y contar hormigas muertas.💀
+## Project Files
 
-## Archivos del Proyecto
+- `BenchMarkjs.js`: Contains the main code for performance comparison.
+- `DeadAntsNewApp.js`: New implementation of the DeadAnts function.
+- `DeadAntsOldApp.js`: Original implementation of the DeadAnts function. 📁
 
-- `BenchMarkjs.js`: Contiene el código principal para la comparación de rendimiento.
-- `DeadAntsNewApp.js`: Nueva implementación de la función DeadAnts.
-- `DeadAntsOldApp.js`: Implementación original de la función DeadAnts. 📁
-
-¡Buena suerte en tu búsqueda de hormigas muertas! 🕵️‍♀️🔍🐜💀
-
+Good luck on your quest to count dead ants! 🕵️‍♀️🔍🐜💀
